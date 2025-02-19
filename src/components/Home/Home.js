@@ -4,6 +4,8 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import About from "../About/About";  // Import About component
+import Project from "../Projects/Projects";
 
 function Home() {
   return (
@@ -42,6 +44,8 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
+      <About />  {/* About Section */}
+      <Project /> {/* Project Section */}
     </section>
   );
 }
