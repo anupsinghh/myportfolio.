@@ -43,7 +43,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      {/* <Home2 /> */}
       <About />  {/* About Section */}
       <Project /> {/* Project Section */}
     </section>
