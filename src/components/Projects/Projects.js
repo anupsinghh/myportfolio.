@@ -53,7 +53,16 @@ function Projects() {
             />
           </Col>
 
-      
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ghar}
+              isBlog={false}
+              title="Property Renting Website"
+              description="A responsive frontend renting platform built with React. Includes property filtering, search, and authentication (Sign In/Sign Up) using Firebase. User uploads are stored locally, offering a smooth and intuitive experience for both renters and listers."
+              ghLink="https://github.com/anupsinghh/MarwadiVilla"
+              demoLink="https://ghar-dekho-brown.vercel.app/" 
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -66,16 +75,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={ghar}
-              isBlog={false}
-              title="Property Renting Website"
-              description="A responsive frontend renting platform built with React. Includes property filtering, search, and authentication (Sign In/Sign Up) using Firebase. User uploads are stored locally, offering a smooth and intuitive experience for both renters and listers."
-              ghLink="https://github.com/anupsinghh/MarwadiVilla"
-              demoLink="https://ghar-dekho-brown.vercel.app/" 
-            />
-          </Col>
+      
 
          
         </Row>
