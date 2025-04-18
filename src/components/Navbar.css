@@ -1,0 +1,58 @@
+/* Reset default navbar styling */
+.navbar {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: 2px solid orange; /* Orange border */
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 10px 30px;
+    width: fit-content;
+    max-width: 90%;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translateY(0); /* Initial position at top */
+  }
+  
+  /* Sticky state on scroll */
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    color: #000000 !important; /* Ensure text stays black */
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    border: 2px solid orange; /* Keep orange border on sticky state */
+  }
+  
+  /* Shrink navbar when scrolling */
+  .navbar.sticky {
+    padding: 5px 30px; /* Reduce padding when scrolled */
+    transform: translateY(-10px); /* Shrink navbar height */
+  }
+  
+  /* Style Nav links */
+  .navbar .nav-link {
+    color: #000000 !important; /* Black text */
+    font-weight: 500;
+    margin: 0 12px;
+    transition: all 0.2s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #007bff !important;
+    transform: scale(1.05);
+  }
+  
+  /* Fork button styling */
+  .fork-btn .fork-btn-inner {
+    background-color: #24292e;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .fork-btn .fork-btn-inner:hover {
+    background-color: #333;
+  }
+  

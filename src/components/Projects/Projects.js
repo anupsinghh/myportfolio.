@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import plant from "../../Assets/Projects/plant.png";
+import ghar from "../../Assets/Projects/ghar.png";
+import brick from "../../Assets/Projects/brickco.png";
 import learnomic from "../../Assets/Projects/learnomic.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import book from "../../Assets/Projects/book.png";
 
 function Projects() {
   return (
@@ -26,67 +25,59 @@ function Projects() {
               imgPath={learnomic}
               isBlog={false}
               title="Learnomic"
-              description="Learnomic is a web application designed to assist junior students by providing easy access to previous year questions (PYQs) and study notes for various subjects. The platform categorizes materials based on semesters and subjects, ensuring seamless navigation. Integrated with Google Drive, it allows students to view and download PDFs directly. The application features a Google authentication system, ensuring secure access to study materials."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description="A web application designed to assist students by providing easy access to previous year questions (PYQs) and study notes for various subjects. The platform categorizes materials based on semesters and subjects, ensuring seamless navigation. The application features a Google authentication system, ensuring secure access to study materials."
+              ghLink="https://github.com/anupsinghh/learnomic"
+              demoLink="https://learnomic.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={plant}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Plant Disease Detection"
+              description="A web-based application that detects plant diseases from leaf images using a custom-trained EfficientNetB0 model. The model was built from scratch using TensorFlow, trained on the PlantVillage dataset with data augmentation and fine-tuning for high accuracy. The app includes an intuitive GUI for image uploads, provides predictions with confidence scores."
+              ghLink="https://github.com/anupsinghh/plant-disease-detection"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={brick}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="brickco"
+              description="A web-based ERP solution built using React and Firebase to streamline brick factory operations. It includes modules for order tracking, inventory management, employee records, and real-time updates. Features secure authentication, responsive design, and intuitive dashboards for efficient workflow management."
+              ghLink="https://github.com/anupsinghh/bricksCo"
+              demoLink="https://bricks-co.vercel.app/login"              
+            />
+          </Col>
+
+      
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={book}
+              isBlog={false}
+              title="Kitabo-ki-dukan"
+              description="A static frontend web application for an online bookstore built using React. Designed to showcase book listings with category sections, intuitive layout, and a clean UI. Focused on layout, styling, and component structure without dynamic search or filtering functionality."
+              ghLink="https://github.com/anupsinghh/Kitabo-ki-dukan"
+              demoLink="https://booklo.vercel.app/" 
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ghar}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Property Renting Website"
+              description="A responsive frontend renting platform built with React. Includes property filtering, search, and authentication (Sign In/Sign Up) using Firebase. User uploads are stored locally, offering a smooth and intuitive experience for both renters and listers."
+              ghLink="https://github.com/anupsinghh/MarwadiVilla"
+              demoLink="https://ghar-dekho-brown.vercel.app/" 
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+         
         </Row>
       </Container>
     </Container>
